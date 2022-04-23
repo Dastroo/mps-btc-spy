@@ -1,0 +1,11 @@
+[Unit]
+Description=api gateway for multipurpose server
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/mps-btc-spy
+Restart=on-failure
+
+
+[Install]
+WantedBy=multi-user.target
